@@ -1,0 +1,105 @@
+.footer {
+  background: #fafafa;
+  border-top: 1px solid #f0eeff;
+  margin-top: auto;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 1.5rem;
+}
+
+.top {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eeebff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.col { display: flex; flex-direction: column; gap: 0.4rem; min-width: 100px; }
+
+.colTitle { font-weight: 700; font-size: 0.82rem; color: #1a1a2e; margin: 0 0 0.25rem; }
+
+.colLink {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.82rem;
+  transition: color 0.2s;
+}
+
+.colLink:hover { color: #6c63ff; }
+
+.newsletter { flex: 1; min-width: 220px; }
+
+.newsletterTitle { font-weight: 700; font-size: 0.875rem; color: #6c63ff; margin: 0 0 0.25rem; }
+.newsletterSub { font-size: 0.78rem; color: #888; margin: 0 0 0.75rem; }
+
+.subscribeForm { display: flex; gap: 0.5rem; }
+
+.emailInput {
+  flex: 1;
+  padding: 0.45rem 0.75rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  outline: none;
+  transition: border-color 0.2s;
+  min-width: 0;
+}
+
+.emailInput:focus { border-color: #6c63ff; }
+
+.subscribed { color: #22c55e; font-size: 0.85rem; font-weight: 500; }
+
+.bottom {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.langSelect {
+  border: 1.5px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  color: #444;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.copy { font-size: 0.78rem; color: #aaa; margin: 0; flex: 1; }
+
+.policyLink { color: #aaa; text-decoration: none; }
+.policyLink:hover { color: #6c63ff; }
+
+.socials { display: flex; gap: 0.75rem; }
+
+.socialLink {
+  color: #888;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.socialLink:hover { color: #6c63ff; }
+
+@media (max-width: 600px) {
+  .top { flex-direction: column; gap: 1.5rem; }
+  .bottom { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .subscribeForm { flex-direction: column; }
+}

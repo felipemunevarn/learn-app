@@ -1,0 +1,113 @@
+.pageTitle { font-size: 1.3rem; font-weight: 700; color: #1a1a2e; margin: 0 0 1.5rem; }
+
+.profileView, .editView {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  max-width: 560px;
+}
+
+.avatarRow { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem; }
+
+.avatar {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: #f0eeff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem;
+}
+
+.avatarLarge {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: #f0eeff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.statusLabel { font-size: 0.75rem; color: #aaa; margin: 0 0 0.2rem; }
+
+.status { font-size: 0.82rem; font-weight: 500; }
+.active { color: #22c55e; }
+.inactive { color: #aaa; }
+
+.profileRow {
+  display: flex; flex-direction: column;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f5f3ff;
+}
+
+.profileLabel { font-size: 0.75rem; font-weight: 600; color: #1a1a2e; margin-bottom: 0.15rem; }
+.profileValue { font-size: 0.875rem; color: #555; }
+
+.actions { display: flex; gap: 0.75rem; margin-top: 1.5rem; }
+
+/* Edit form */
+.photoSection {
+  display: flex; align-items: flex-start; gap: 1rem;
+  margin-bottom: 1.5rem; padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f0eeff;
+}
+
+.photoLabel { font-size: 0.82rem; font-weight: 600; color: #1a1a2e; margin: 0 0 0.2rem; }
+.photoHint { font-size: 0.75rem; color: #aaa; margin: 0 0 0.5rem; }
+.photoActions { display: flex; align-items: center; gap: 0.75rem; }
+
+.removeBtn {
+  background: none; border: none; color: #aaa;
+  font-size: 0.8rem; cursor: pointer; padding: 0;
+}
+.removeBtn:hover { color: #ef4444; }
+
+.field { margin-bottom: 1rem; }
+
+.label { display: block; font-size: 0.8rem; font-weight: 500; color: #444; margin-bottom: 0.3rem; }
+
+.input {
+  width: 100%; padding: 0.55rem 0.75rem;
+  border: 1.5px solid #e0e0e0; border-radius: 6px;
+  font-size: 0.875rem; outline: none;
+  transition: border-color 0.2s; box-sizing: border-box;
+}
+
+.input:focus { border-color: #6c63ff; }
+.inputError { border-color: #ef4444 !important; }
+.error { display: block; color: #ef4444; font-size: 0.75rem; margin-top: 0.2rem; }
+
+.serverError {
+  background: #fef2f2; border: 1px solid #fecaca;
+  color: #dc2626; border-radius: 6px;
+  padding: 0.65rem 0.9rem; font-size: 0.85rem; margin-bottom: 1rem;
+}
+
+/* Toggle switch */
+.toggleLabel {
+  display: flex; align-items: center; gap: 0.75rem;
+  font-size: 0.875rem; font-weight: 500; color: #444;
+  cursor: pointer; user-select: none;
+}
+
+.toggleInput { display: none; }
+
+.toggle {
+  width: 40px; height: 22px; border-radius: 11px;
+  background: #ddd; position: relative;
+  transition: background 0.2s; flex-shrink: 0;
+}
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  width: 16px; height: 16px;
+  border-radius: 50%; background: #fff;
+  top: 3px; left: 3px;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.toggleOn { background: #6c63ff; }
+.toggleOn::after { transform: translateX(18px); }
+
+.formActions { display: flex; gap: 0.75rem; margin-top: 1.25rem; }

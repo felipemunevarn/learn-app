@@ -1,0 +1,116 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 80vh;
+  align-items: flex-start;
+}
+
+.card {
+  display: flex;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+  max-width: 760px;
+  width: 100%;
+}
+
+.imageCol { width: 200px; flex-shrink: 0; }
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  background: linear-gradient(135deg, #e8e4ff 0%, #c7c0ff 100%);
+}
+
+.formCol { flex: 1; padding: 2rem 2rem 2rem 0; }
+
+.title { font-size: 1.4rem; font-weight: 700; color: #1a1a2e; margin: 0 0 0.25rem; }
+
+.roleTag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6c63ff;
+  background: #f0eeff;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-bottom: 1.25rem;
+}
+
+.field { margin-bottom: 1rem; }
+
+.label { display: block; font-size: 0.8rem; font-weight: 500; color: #444; margin-bottom: 0.3rem; }
+
+.optional { font-weight: 400; color: #aaa; }
+
+.input {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  color: #1a1a2e;
+  background: #fff;
+}
+
+.input:focus { border-color: #6c63ff; }
+.inputError { border-color: #ef4444 !important; }
+
+.error { display: block; color: #ef4444; font-size: 0.75rem; margin-top: 0.2rem; }
+
+.serverError {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  border-radius: 6px;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.submitBtn { margin-top: 0.75rem; }
+
+.signinText { font-size: 0.82rem; color: #666; margin-top: 1rem; }
+.link { color: #6c63ff; text-decoration: none; font-weight: 500; }
+.link:hover { text-decoration: underline; }
+
+/* Success card */
+.successCard {
+  max-width: 480px;
+  margin: 4rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.successTitle { font-size: 1.5rem; color: #1a1a2e; margin: 0 0 0.5rem; }
+.successText { color: #666; margin: 0 0 1.5rem; }
+
+.credentials {
+  background: #f8f7ff;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.credRow { display: flex; justify-content: space-between; padding: 0.4rem 0; }
+.credRow + .credRow { border-top: 1px solid #e8e4ff; }
+.credLabel { font-size: 0.85rem; color: #888; }
+.credValue { font-size: 0.85rem; font-weight: 600; color: #1a1a2e; font-family: monospace; }
+
+@media (max-width: 600px) {
+  .card { flex-direction: column; }
+  .imageCol { width: 100%; }
+  .imagePlaceholder { min-height: 140px; }
+  .formCol { padding: 1.5rem; }
+}

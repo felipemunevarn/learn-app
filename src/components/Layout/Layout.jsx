@@ -1,13 +1,18 @@
 import { Outlet } from 'react-router-dom';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
+import styles from './Layout.module.css';
 
 const Layout = () => {
   return (
-    <div>
-      <main style={{ padding: '1.5rem 2rem', maxWidth: '1200px', margin: '0 auto' }}>
+    <div className={styles.app}>
+      <Header />
+      <main className={styles.main}>
         <Breadcrumbs />
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 };
